@@ -2,22 +2,24 @@ import Foto from "./Foto";
 
 const Aside = () => {
   return (
-    <aside className="flex gap-20 justify-center h-screen items-center w-1/2 mx-auto">
-      <div className="space-y-3 w-2/3">
-        <h1 className="font-black text-4xl mb-3">Marco Fernández</h1>
-        <p className="">Full Stack Developer</p>
+    <aside className="flex flex-col md:flex-row items-start md:items-center sm:justify-center gap-5 sm:gap-20 sm:h-screen w-full mx-auto pt-5 md:pt-1">
+      <div className="space-y-3 w-full">
+        <p className="text-lg text-mainOrange">Full Stack Developer</p>
+        <h1 className="font-black sm:font-semibold text-3xl sm:text-4xl md:text-5xl mb-3 text-mainBlue">
+          Marco Fernández
+        </h1>
         <p className="">
           Hello! I'm span Marco, a versatile developer creating{" "}
-          <span className="text-orange">web apps</span> for businesses,
+          <span className="text-mainOrange">web apps</span> for businesses,
           education, e-commerce, social networks, and more. Let's bring your
           ideas to life with innovative solutions!.
         </p>
-        <p className="font-bold">
-          <span className="text-orange"> &lt;make&gt;</span> it happen
-          <span className="text-orange">&lt;/make&gt;</span>
+        <p className="">
+          <span className="text-mainOrange"> &lt;make&gt;</span> it happen
+          <span className="text-mainOrange">&lt;/make&gt;</span>
         </p>
         <div className="space-y-2">
-          <h3 className="font-black">Social networks</h3>
+          <h3 className="font-semibold text-mainOrange">Social networks</h3>
           <div className="flex gap-5 ">
             <a
               href="https://www.linkedin.com/in/marcofern%C3%A1ndez/"
@@ -81,13 +83,13 @@ const Aside = () => {
           </div>
         </div>
         <div>
-          <p className="text-blue font-semi-bold">Tech Stack</p>
+          <p className="text-mainBlue">Tech Stack</p>
         </div>
-        <div className="flex justify-start gap-4">
-          <button className=" text-black border border-orange bg-orange w-32 p-2 rounded-[10rem] hover:bg-blue hover:border-blue transition-all">
+        <div className="flex justify-start gap-2 sm:gap-3">
+          <button className=" text-black border border-mainOrange bg-mainOrange rounded-[10rem] hover:bg-mainBlue hover:border-mainBlue transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
             Download CV
           </button>
-          <button className="border border-softBlue w-32 p-2 rounded-[10rem] hover:bg-blue hover:border-blue hover:text-black transition-all">
+          <button className="text-mainBlue border border-mainBlue rounded-[10rem] hover:bg-baseBlue hover:border-blue hover:text-black transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
             Contact info
           </button>
         </div>

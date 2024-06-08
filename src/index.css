@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.contenedor ::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 300%;
+  animation: rotate 10s linear infinite;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background: linear-gradient(to left, #00bcd4ff 50%, #07070f 50%);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+  }
+}
+
+.jana-image{
+  background-image: url(./assets/jana.jpg);
+}
+.kassya-image{
+  background-image: url(./assets/kassya.jpg);
+}
+.tasky-image{
+  background-image: url(./assets/tasky.jpg);
+}
+.leangineers-image{
+  background-image: url(./assets/leangineers.jpg);
+}
