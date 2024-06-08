@@ -2,10 +2,11 @@ import foto from "./assets/foto.png";
 
 const Foto = () => {
   return (
-    <div className="h-[20rem] w-auto sm:w-[20rem] sm:h-auto p-1 rounded-lg overflow-hidden">
-      <div className="contenedor relative w-full h-full rounded-lg contenedor">
-        <div className="w-full h-full overflow-hidden rounded-lg bg-mainBg flex justify-center items-center">
-          <img src={foto} alt="" className="w-full  mx-auto bg-mainBlue" />
+    <div className="w-[15rem] h-[15rem] md:w-1/3 md:h-[25rem] rounded-lg overflow-hidden">
+      
+      <div className="contenedor relative w-full h-full rounded-lg">
+        <div className="foto w-full h-full overflow-hidden rounded-lg flex justify-center items-center bg-no-repeat bg-top md:bg-center bg-cover">
+         
         </div>
       </div>
     </div>

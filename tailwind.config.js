@@ -9,6 +9,7 @@ export default {
         softBlue: "#d3d9f3",
         mainBlue: "#00bcd4ff",
         baseBlue: "#a0e9ff",
+        deepBg: "#105369",
       },
     },
   },

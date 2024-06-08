@@ -1,15 +1,18 @@
+import About from "./About";
 import Aside from "./Aside";
+import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
-
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <main className="w-11/12 mx-auto max-w-[800px]">
+      <main className="w-full">
         <Aside />
         <Projects/>
+        <About/>
+        <Contact></Contact>
       </main>
     </>
   );
