@@ -5,8 +5,9 @@ export default {
     extend: {
       colors: {
         mainBg: "#07070f",
-        orange: "#fda500",
+        orange: "#eab224",
         softBlue: "#d3d9f3",
+        blue: "#a0e9ff",
       },
     },
   },
