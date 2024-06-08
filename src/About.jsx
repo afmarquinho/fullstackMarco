@@ -4,7 +4,7 @@ const About = () => {
   const [skills, setSkills] = useState(2);
 
   return (
-    <div className="w-full bg-gradient-to-bl from-deepBg pb-10">
+    <div className="w-full bg-gradient-to-bl from-deepBg pb-10" id="about">
       <div className="w-11/12 max-w-[800px] mx-auto mt-10">
         <h1 className="uppercase text-md sm:text-xl font-bold text-mainBlue py-5 text-center">
           About Me
@@ -15,24 +15,24 @@ const About = () => {
         <div>
           <div className="flex gap-3 mb-5">
             <button
-              className={`px-2 py-1 w-24 bg-gradient-to-b from-mainOrange to-amber-500 text-black rounded-md ${
-                skills === 1 && "from-mainBlue to-cyan-800 text-white"
+              className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
+                skills === 1 ? "from-mainBlue to-cyan-800 text-white" : "from-mainOrange to-amber-600"
               }`}
               onClick={() => setSkills(1)}
             >
               FontEnd
             </button>
             <button
-              className={`px-2 py-1 w-24 bg-gradient-to-b from-mainOrange to-amber-500 text-black rounded-md ${
-                skills === 2 && "from-mainBlue to-cyan-800 text-white"
+              className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
+                skills === 2 ? "from-mainBlue to-cyan-800 text-white" : "from-mainOrange to-amber-600"
               }`}
               onClick={() => setSkills(2)}
             >
               BackEnd
             </button>
             <button
-              className={`px-2 py-1 w-24 bg-gradient-to-b from-mainOrange to-amber-500 text-black rounded-md ${
-                skills === 3 && "from-mainBlue to-cyan-800 text-white"
+              className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
+                skills === 3 ? "from-mainBlue to-cyan-800 text-white" : "from-mainOrange to-amber-600"
               }`}
               onClick={() => setSkills(3)}
             >
@@ -66,8 +66,9 @@ const About = () => {
               <h3 className="text-center uppercase text-white font-semibold">
                 Other Skills
               </h3>
-              <li>Jest</li>
               <li>Git, Github, Figma</li>
+              <li>Jest</li>
+              <li>Swagger</li>
             </ul>
           )}
         </div>

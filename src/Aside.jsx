@@ -11,7 +11,7 @@ import react from "./assets/icons/React.webp";
 
 const Aside = () => {
   return (
-    <aside className="bg-gradient-to-t from-deepBg">
+    <aside className="bg-gradient-to-t from-deepBg" id="aside">
       <div className="w-11/12 max-w-[800px] mx-auto flex flex-col md:flex-row justify-center items-start md:items-center md:justify-between gap-4 md:gap-20 sm:h-screen  pt-5 md:pt-0">
         <div className="space-y-3 w-full md:w-2/3">
           <p className="text-lg text-mainOrange">Full Stack Developer</p>
@@ -106,6 +106,9 @@ const Aside = () => {
               <img src={jest} alt="html" srcset="" className="h-10" />
             </div>
           </div>
+          <p>
+            To konow more abour me, download the CV on the botton below.
+          </p>
           <div className="flex justify-start gap-2 sm:gap-3">
             <button className=" text-black border border-mainOrange bg-mainOrange rounded-[10rem] hover:bg-mainBlue hover:border-mainBlue transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
               Download CV
