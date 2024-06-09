@@ -8,18 +8,23 @@ import mongo from "./assets/icons/mongo.jpg";
 import postgres from "./assets/icons/postgresql.png";
 import vue from "./assets/icons/vue.png";
 import react from "./assets/icons/React.webp";
+import { motion } from "framer-motion";
 
 const Aside = () => {
   return (
-    <aside className="bg-gradient-to-t from-deepBg" id="aside">
+    <aside className="bg-gradient-to-t from-deepBg" id="home">
       <div className="w-11/12 max-w-[800px] mx-auto flex flex-col md:flex-row justify-center items-start md:items-center md:justify-between gap-4 md:gap-20 sm:h-screen  pt-5 md:pt-0">
         <div className="space-y-3 w-full md:w-2/3">
           <p className="text-lg text-mainOrange">Full Stack Developer</p>
-          <h1 className="font-black sm:font-semibold text-3xl sm:text-4xl md:text-6xl mb-3 text-mainBlue">
+          <motion.h1 className="font-black sm:font-semibold text-3xl sm:text-4xl md:text-6xl mb-3 text-mainBlue" 
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ type: 'spring', stiffness: 10 }}
+          >
             Marco Fernández
-          </h1>
+          </motion.h1>
           <p className="">
-            Hello! I'm span Marco, a versatile developer creating{" "}
+            Hello! I'm Marco, a versatile developer creating{" "}
             <span className="text-mainOrange">web apps</span> for businesses,
             education, e-commerce, social networks, and more. Let's bring your
             ideas to life with innovative solutions!.
@@ -94,7 +99,7 @@ const Aside = () => {
           </div>
           <div className="space-y-2">
             <p className="text-mainBlue">Tech Stack</p>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-4">
               <img src={html} alt="html" srcset="" className="h-8" />
               <img src={css} alt="html" srcset="" className="h-8" />
               <img src={js} alt="html" srcset="" className="h-8" />
@@ -106,14 +111,12 @@ const Aside = () => {
               <img src={jest} alt="html" srcset="" className="h-10" />
             </div>
           </div>
-          <p>
-            To konow more abour me, download the CV on the botton below.
-          </p>
+          <p>To konow more abour me, download the CV on the botton below.</p>
           <div className="flex justify-start gap-2 sm:gap-3">
             <button className=" text-black border border-mainOrange bg-mainOrange rounded-[10rem] hover:bg-mainBlue hover:border-mainBlue transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
               Download CV
             </button>
-            <button className="text-mainBlue border border-mainBlue rounded-[10rem] hover:bg-baseBlue hover:border-blue hover:text-black transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
+            <button className="text-white border border-white rounded-[10rem] hover:bg-baseBlue hover:border-baseBlue hover:text-black transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
               Contact info
             </button>
           </div>

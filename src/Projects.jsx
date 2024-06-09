@@ -11,19 +11,20 @@ const Projects = () => {
           <div className="w-full md-w-1/2">
             <p className="font-black text-5xl">01</p>
             <h2 className="font-bold text-lg text-mainOrange uppercase">
-            Jana Management
+              Jana Management
             </h2>
             <p>
-              LeanGineer´s company website showcasing the company's portfolio
-              and service offerings, featuring a blog page and a contact form.
+              A PERN (PostgreSQL, Express, React, Node.js) stack tender
+              management system for VM Termocalderas, a metals mechanic company,
+              to streamline and enhance their tender processes.
             </p>
             <h3 className="text-mainOrange">Stack:</h3>
             <p className="text-cyan-500 font-semibold">
-            Html, Css, Typescript, Tailwind Css, React, Redux, Node Js,
-            Express, Morgan, Postgresql, Sequelize, Jest, Swagger
+              Html, Css, Typescript, Tailwind Css, React, Redux, Node Js,
+              Express, Morgan, Postgresql, Sequelize, Jest, Swagger
             </p>
             <div className="flex gap-3 my-2">
-              <button>  
+              <button>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"

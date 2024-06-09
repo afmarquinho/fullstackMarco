@@ -1,4 +1,5 @@
 const Contact = () => {
+  
         
   return (
     <div className="w-full pb-10" id="contact">
@@ -10,7 +11,7 @@ const Contact = () => {
           Let's work together. I can be the best addition to your team. Get in
           touch today!
         </p>
-        <p className="p-2 rounded-[25rem] w-2/3 sm:w-[15rem] mx-auto text-center mt-4 bg-cyan-500 text-black">
+        <p className="p-2 rounded-[25rem] w-2/3 sm:w-[15rem] mx-auto text-center mt-4 bg-cyan-200 text-black">
           fernandez9029@gmail.com
 
         </p>
