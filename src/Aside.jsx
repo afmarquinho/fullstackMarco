@@ -14,12 +14,25 @@ const Aside = () => {
   return (
     <aside className="bg-gradient-to-t from-deepBg" id="home">
       <div className="w-11/12 max-w-[800px] mx-auto flex flex-col md:flex-row justify-center items-start md:items-center md:justify-between gap-4 md:gap-20 sm:h-screen  pt-5 md:pt-0">
-        <div className="space-y-3 w-full md:w-2/3">
-          <p className="text-lg text-mainOrange">Full Stack Developer</p>
-          <motion.h1 className="font-black sm:font-semibold text-3xl sm:text-4xl md:text-6xl mb-3 text-mainBlue" 
-          initial={{ x: '-100vw' }}
-          animate={{ x: 0 }}
-          transition={{ type: 'spring', stiffness: 10 }}
+        <motion.div
+          className="space-y-3 w-full md:w-2/3"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 4 }}
+        >
+          <motion.p className="text-lg text-mainOrange md:pt-10"
+          initial={{ y: "100vh", x:"-500vw"
+
+           }}
+          animate={{ y: 0, x:0 }}
+          transition={{ duration: 3 }}>
+            Full Stack Developer
+          </motion.p>
+          <motion.h1
+            className="font-black sm:font-semibold text-3xl sm:text-4xl md:text-6xl mb-3 text-mainBlue"
+            initial={{ x: "-100vw", y:"-1000vh" }}
+            animate={{ x: 0, y:0 }}
+            transition={{ duration: 3 }}
           >
             Marco Fernández
           </motion.h1>
@@ -33,7 +46,10 @@ const Aside = () => {
             <span className="text-mainOrange"> &lt;make&gt;</span> it happen
             <span className="text-mainOrange">&lt;/make&gt;</span>
           </p>
-          <div className="space-y-2">
+          <motion.div className="space-y-2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay:3 }}>
             <h3 className="font-semibold text-mainOrange">Social networks</h3>
             <div className="flex gap-5 ">
               <a
@@ -96,7 +112,7 @@ const Aside = () => {
                 </svg>
               </a>
             </div>
-          </div>
+          </motion.div>
           <div className="space-y-2">
             <p className="text-mainBlue">Tech Stack</p>
             <div className="flex flex-wrap gap-4">
@@ -113,14 +129,24 @@ const Aside = () => {
           </div>
           <p>To konow more abour me, download the CV on the botton below.</p>
           <div className="flex justify-start gap-2 sm:gap-3">
-            <button className=" text-black border border-mainOrange bg-mainOrange rounded-[10rem] hover:bg-mainBlue hover:border-mainBlue transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
+            <motion.button
+              className=" text-black border border-mainOrange bg-mainOrange rounded-[10rem] hover:bg-mainBlue hover:border-mainBlue transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32"
+              initial={{ x: "-1000vw" }}
+              animate={{ x: 0 }}
+              transition={{ duration: 3 }}
+            >
               Download CV
-            </button>
-            <button className="text-white border border-white rounded-[10rem] hover:bg-baseBlue hover:border-baseBlue hover:text-black transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32">
+            </motion.button>
+            <motion.button
+              className="text-white border border-white rounded-[10rem] hover:bg-baseBlue hover:border-baseBlue hover:text-black transition-all text-sm lg:text-base px-3 py-2 sm:p-2 sm:w-32"
+              initial={{ x: "1000vw" }}
+              animate={{ x: 0 }}
+              transition={{ duration: 3 }}
+            >
               Contact info
-            </button>
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
         <Foto />
       </div>
     </aside>
