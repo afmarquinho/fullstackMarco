@@ -16,17 +16,17 @@ const Navbar = () => {
           <h2 className="sm:text-2xl lg:text-4xl font-semibold">DevFolio</h2>
           <h1 className="sm:text-2xl lg:text-4xl  sm:font-semibold lg:font-black text-mainBlue">Marco Fernández</h1>
         </div>
-        <div className="flex justify-end items-center gap-5">
-          <a href="#home" className="hover:text-white">
+        <div className="flex justify-end text-white items-center gap-5">
+          <a href="#home" className="hover:text-mainBlu">
             Home
           </a>
-          <a href="#projects" className="hover:text-white">
+          <a href="#projects" className="hover:text-mainBlu">
             Projects
           </a>
-          <a href="#about" className="hover:text-white">
+          <a href="#about" className="hover:text-mainBlue">
             About
           </a>
-          <a href="#contact" className="hover:text-white">
+          <a href="#contact" className="hover:text-mainBlue">
             Contact
           </a>
         </div>
