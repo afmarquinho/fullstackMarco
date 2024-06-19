@@ -5,15 +5,15 @@ const About = () => {
   const [about, setAbout] = useState(1);
 
   return (
-    <div className="w-full bg-gradient-to-b from-deepBg pb-10 md:pt-10" id="about">
+    <div className="w-full pb-10 md:pt-10" id="about">
       <div className="w-11/12 max-w-[800px] mx-auto mt-10">
-      <h1 className="uppercase text-md sm:text-xl font-bold text-mainOrange pb-5 sticky md:static top-0 text-center bg-opacity-10 md:bg-opacity-100 backdrop-blur-md md:backdrop-blur-0">
+        <h1 className="uppercase text-md sm:text-xl font-bold text-white pb-5 sticky md:static top-0 text-center bg-opacity-10 md:bg-opacity-100 backdrop-blur-md md:backdrop-blur-0">
           About Me
         </h1>
 
         <div>
           <div className="flex justify-end">
-            <p className=" bg-cyan-200 text-black p-4 rounded me-0">
+            <p className="bg-mainOrange text-black p-4 rounded me-0">
               I'm a passionate and creative full stack developer with a love for
               technologies. Known for my problem-solving skills and ability to
               work under pressure, I lead projects with discipline and a
@@ -23,7 +23,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <h2 className="uppercase text-md sm:text-lg font-bold text-mainOrange py-5">
+          <h2 className="uppercase text-md sm:text-lg font-bold text-white py-5">
             Skills
           </h2>
           <div>
@@ -31,8 +31,8 @@ const About = () => {
               <button
                 className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
                   skills === 1
-                    ? "from-mainBlue to-cyan-800 text-white"
-                    : "from-mainOrange to-amber-600"
+                    ? "from-mainBlue to-cyan-700 text-white"
+                    : "from-mainOrange to-mainOrange"
                 }`}
                 onClick={() => setSkills(1)}
               >
@@ -41,8 +41,8 @@ const About = () => {
               <button
                 className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
                   skills === 2
-                    ? "from-mainBlue to-cyan-800 text-white"
-                    : "from-mainOrange to-amber-600"
+                    ? "from-mainBlue to-cyan-700 text-white"
+                    : "from-mainOrange to-mainOrange"
                 }`}
                 onClick={() => setSkills(2)}
               >
@@ -51,8 +51,8 @@ const About = () => {
               <button
                 className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
                   skills === 3
-                    ? "from-mainBlue to-cyan-800 text-white"
-                    : "from-mainOrange to-amber-600"
+                    ? "from-mainBlue to-cyan-700 text-white"
+                    : "from-mainOrange to-mainOrange"
                 }`}
                 onClick={() => setSkills(3)}
               >
@@ -87,14 +87,14 @@ const About = () => {
               </>
             ) : (
               <>
-              <h3 className="text-center uppercase text-black font-semibold bg-cyan-200 p-4 mb-2">
+                <h3 className="text-center uppercase text-black font-semibold bg-cyan-200 p-4 mb-2">
                   Other Skills
                 </h3>
-                  <ul className="list-disc ps-5">
-                <li>Git, Github, Figma</li>
-                <li>Jest</li>
-                <li>Swagger</li>
-              </ul>
+                <ul className="list-disc ps-5">
+                  <li>Git, Github, Figma</li>
+                  <li>Jest</li>
+                  <li>Swagger</li>
+                </ul>
               </>
             )}
           </div>

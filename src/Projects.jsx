@@ -1,6 +1,6 @@
 const Projects = () => {
   return (
-    <div className="w-full md:pt-10" id="projects">
+    <div className="w-full md:py-12" id="projects">
       <div className="w-11/12 max-w-[800px] mx-auto mt-10">
         <h1 className="uppercase text-md sm:text-xl font-bold text-mainBlue pb-5 sticky md:static top-0 text-center bg-mainBg">
           Projects
