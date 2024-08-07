@@ -2,23 +2,24 @@ import { useState } from "react";
 
 const About = () => {
   const [skills, setSkills] = useState(2);
-  const [about, setAbout] = useState(1);
 
   return (
-    <div className="w-full pb-10 md:pt-10" id="about">
-      <div className="w-11/12 max-w-[800px] mx-auto mt-10">
-        <h1 className="uppercase text-md sm:text-xl font-bold text-white pb-5 sticky md:static top-0 text-center bg-opacity-10 md:bg-opacity-100 backdrop-blur-md md:backdrop-blur-0">
+    <section className="w-full pb-10 md:pt-10 bg-slate-100">
+      <div className="w-11/12 max-w-[1100px] mx-auto">
+
+        <h1 className="font-archivo-black uppercase text-2xl text-center bg-amber-500">
           About Me
         </h1>
 
         <div>
           <div className="flex justify-end">
             <p className="bg-mainOrange text-black p-4 rounded me-0">
-              I'm a passionate and creative full stack developer with a love for
-              technologies. Known for my problem-solving skills and ability to
-              work under pressure, I lead projects with discipline and a
-              commitment to continuous learning. My diverse skill set allows me
-              to deliver innovative solutions efficiently and effectively.
+              I&apos;m a passionate and creative full stack developer with a
+              love for technologies. Known for my problem-solving skills and
+              ability to work under pressure, I lead projects with discipline
+              and a commitment to continuous learning. My diverse skill set
+              allows me to deliver innovative solutions efficiently and
+              effectively.
             </p>
           </div>
         </div>
@@ -100,7 +101,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default About;
