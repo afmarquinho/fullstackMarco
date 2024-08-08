@@ -11,7 +11,7 @@
 const Hero = () => {
   return (
     <>
-      <div className="bg-[url('./assets/fondo1.jpg')] bg-fixed bg-top bg-no-repeat bg-cover pt-1 md:pt-20  h-screen relative">
+      <div className="bg-[url('./assets/fondo.jpg')] bg-fixed bg-top bg-no-repeat bg-cover pt-1 md:pt-20  h-screen relative" id="home">
         {/* Capa degradda */}
         <div className="h-screen absolute bg-custom-gradient top-0 bottom-0 right-0 left-0"></div>
 

@@ -1,6 +1,9 @@
 const Projects = () => {
   return (
-    <section className="bg-slate-500 relative pt-2 pb-4 md:pt-20 bg-custom-gradient2" id="projects">
+    <section
+      className="bg-slate-500 relative pt-2 pb-4 md:pt-20 bg-custom-gradient2"
+      id="projects"
+    >
       <h1
         className="uppercase text-2xl md:text-4xl font-black font-archivo-black sticky md:static top-0 text-center text-amber-500 
         bg-slate-500 md:bg-transparent"
@@ -13,8 +16,10 @@ const Projects = () => {
 
         <div className="jana flex flex-col sm:flex-row gap-4 sm:gap-3 md:gap-5">
           <div className="w-full md-w-1/2">
-            <p className="font-black text-5xl">01</p>
-            <h2 className="font-bold text-lg text-amber-500 uppercase">
+            <p className="font-black font-archivo-black text-xl md:text-5xl">
+              01
+            </p>
+            <h2 className="font-black font-archivo-black text-xl md:text-3xl text-amber-500 uppercase">
               Jana Management
             </h2>
             <p>
@@ -24,8 +29,10 @@ const Projects = () => {
             </p>
             <h3 className="text-amber-500">Stack:</h3>
             <p className="text-black font-semibold">
-              Html, Css, Typescript, Tailwind Css, React, Redux, Node Js,
-              Express, Morgan, Postgresql, Sequelize, Jest, Swagger
+              Typescript, React, React-dom, Redux, Redux (thunk - toolkit), Zod,
+              Axios, Tailwind Css, Node Js, Express, Postgresql, Sequelize,
+              Jest, Swagger, Morgan, Multer, Express-validator, Jsonwebtoken,
+              Bcryptjs
             </p>
             <div className="flex gap-3 my-2">
               <button>
@@ -41,9 +48,9 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              {/* <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="jana-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
@@ -52,8 +59,10 @@ const Projects = () => {
         <div className="kassya flex flex-col-reverse sm:flex-row gap-4 sm:gap-3 md:gap-5">
           <div className="kassya-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
           <div className="w-full md-w-1/2">
-            <p className="font-black text-5xl">02</p>
-            <h2 className="font-bold text-lg text-mainBlue uppercase">
+            <p className="font-black font-archivo-black text-xl md:text-5xl text-amber-500 ">
+              02
+            </p>
+            <h2 className="font-black font-archivo-black text-xl md:text-3xl uppercase">
               Kassya Management
             </h2>
             <p>
@@ -80,17 +89,19 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              {/* <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
         <hr className="my-6 border-1 border-mainOrange" />
         <div className="leangineers flex flex-col sm:flex-row gap-4 sm:gap-3 md:gap-5">
           <div className="w-full md-w-1/2">
-            <p className="font-black text-5xl">03</p>
-            <h2 className="font-bold text-lg text-amber-500 uppercase">
+            <p className="font-black font-archivo-black text-xl md:text-5xl">
+              03
+            </p>
+            <h2 className="font-black font-archivo-black text-xl md:text-3xl text-amber-500 uppercase">
               LEAN GINEERS WEB SITE
             </h2>
             <p>
@@ -117,9 +128,9 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              {/* <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="leangineers-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
@@ -128,8 +139,12 @@ const Projects = () => {
         <div className="tasky flex flex-col-reverse sm:flex-row gap-4 sm:gap-3 md:gap-5">
           <div className="tasky-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
           <div className="w-full md-w-1/2">
-            <p className="font-black text-5xl">04</p>
-            <h2 className="font-bold text-lg text-mainBlue uppercase">Tasky</h2>
+            <p className="font-black font-archivo-black text-xl md:text-5xl text-amber-500 ">
+              04
+            </p>
+            <h2 className="font-black font-archivo-black text-xl md:text-3xl uppercase">
+              Tasky
+            </h2>
             <p>
               Front-end application for managing pending tasks, the form
               includes the necessary validations to create an event. In addition
@@ -139,7 +154,7 @@ const Projects = () => {
             <h3 className="text-amber-500">Stack:</h3>
             <p className="text-black font-semibold">
               Html, Css, Js, Stylyled Components, React, Hooks, Context Api,
-              Node Js, Express, Mongoose, Mongo DB
+              Node Js, Express, Mongoose, Mongo DB.
             </p>
             <div className="flex gap-3 my-2">
               <button>
@@ -155,9 +170,9 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              {/* <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

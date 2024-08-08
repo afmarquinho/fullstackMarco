@@ -13,7 +13,7 @@ export default {
       },
       backgroundImage: {
         "custom-gradient":
-          "linear-gradient(240deg, rgba(30, 27, 75, 1) 0%, rgba(30, 27, 75, 1) 70%, rgba(253, 165, 0, 0.8) 70%, rgba(253, 165, 0, 0.8) 90%, rgba(80, 70, 229, 0.8) 90%, rgba(80, 70, 229, 0.6) 100%)",
+          "linear-gradient(240deg, rgba(30, 27, 75, 1) 0%, rgba(30, 27, 75, 1) 60%, rgba(253, 165, 0, 0.6) 60%, rgba(253, 165, 0, 0.6) 90%, rgba(80, 70, 229, 0.8) 90%, rgba(80, 70, 229, 0.6) 100%)",
 
           "custom-gradient2":
           "linear-gradient(240deg, rgba(100, 116, 139, 1) 0%, rgba(100, 116, 139, 1) 90%, rgba(30, 27, 75, 1) 90%, rgba(30, 27, 75, 1) 100%)",
