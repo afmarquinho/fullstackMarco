@@ -14,7 +14,10 @@ export default {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(240deg, rgba(30, 27, 75, 1) 0%, rgba(30, 27, 75, 1) 70%, rgba(253, 165, 0, 0.8) 70%, rgba(253, 165, 0, 0.8) 90%, rgba(80, 70, 229, 0.8) 90%, rgba(80, 70, 229, 0.6) 100%)",
-      },
+
+          "custom-gradient2":
+          "linear-gradient(240deg, rgba(100, 116, 139, 1) 0%, rgba(100, 116, 139, 1) 90%, rgba(30, 27, 75, 1) 90%, rgba(30, 27, 75, 1) 100%)",
+      }, 
       fontFamily: {
         'archivo-black': ['"Archivo Black"', 'sans-serif'],
         'roboto-condensed': ['"Roboto Condensed"', 'sans-serif'],
@@ -25,7 +28,7 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         ".clip-custom": {
-          clipPath: " polygon(0 0, 100% 0, 100% 91%, 18% 100%, 0 62%)",
+          clipPath: "polygon(0 0, 100% 0, 100% 95%, 0 100%)",
         },
       });
     },

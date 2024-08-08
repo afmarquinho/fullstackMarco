@@ -1,7 +1,7 @@
 const Services = () => {
   return (
-    <div className="w-11/12 md:w-full md:bg-amber-500 py-5 mx-auto">
-      <h1 className="text-lg md:text-4xl mb-5 sticky font-black font-archivo-black text-center">
+    <div className="w-11/12 md:w-full md:bg-amber-500 py-5 mx-auto relative">
+      <h1 className="text-2xl md:text-4xl mb-5 font-black font-archivo-black text-center text-amber-500 md:text-white sticky top-0 bg-indigo-950 md:bg-amber-500">
         Services
       </h1>
       <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row">

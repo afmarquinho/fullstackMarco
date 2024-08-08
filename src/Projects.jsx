@@ -1,16 +1,20 @@
 const Projects = () => {
   return (
-    <div className="w-full md:py-12" id="projects">
+    <section className="bg-slate-500 relative pt-2 pb-4 md:pt-20 bg-custom-gradient2" id="projects">
+      <h1
+        className="uppercase text-2xl md:text-4xl font-black font-archivo-black sticky md:static top-0 text-center text-amber-500 
+        bg-slate-500 md:bg-transparent"
+        id="projects"
+      >
+        Projects
+      </h1>
       <div className="w-11/12 max-w-[800px] mx-auto mt-10">
-        <h1 className="uppercase text-md sm:text-xl font-bold text-mainBlue pb-5 sticky md:static top-0 text-center bg-mainBg">
-          Projects
-        </h1>
         <p className="">This is just a small piece of each project.</p>
 
         <div className="jana flex flex-col sm:flex-row gap-4 sm:gap-3 md:gap-5">
           <div className="w-full md-w-1/2">
             <p className="font-black text-5xl">01</p>
-            <h2 className="font-bold text-lg text-mainOrange uppercase">
+            <h2 className="font-bold text-lg text-amber-500 uppercase">
               Jana Management
             </h2>
             <p>
@@ -18,8 +22,8 @@ const Projects = () => {
               management system for VM Termocalderas, a metals mechanic company,
               to streamline and enhance their tender processes.
             </p>
-            <h3 className="text-mainOrange">Stack:</h3>
-            <p className="text-cyan-500 font-semibold">
+            <h3 className="text-amber-500">Stack:</h3>
+            <p className="text-black font-semibold">
               Html, Css, Typescript, Tailwind Css, React, Redux, Node Js,
               Express, Morgan, Postgresql, Sequelize, Jest, Swagger
             </p>
@@ -37,7 +41,7 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-mainOrange border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
               </button>
             </div>
@@ -57,8 +61,8 @@ const Projects = () => {
               chain processes management. It consists of 3 modules, purchasing,
               suppliers and inventory.
             </p>
-            <h3 className="text-mainOrange">Stack:</h3>
-            <p className="text-cyan-500 font-semibold">
+            <h3 className="text-amber-500">Stack:</h3>
+            <p className="text-black font-semibold">
               Html, Css, Js, Tailwind Css, React, Redux, Node Js, Express,
               Mongoose, Mongo DB
             </p>
@@ -76,7 +80,7 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-mainOrange border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
               </button>
             </div>
@@ -86,15 +90,16 @@ const Projects = () => {
         <div className="leangineers flex flex-col sm:flex-row gap-4 sm:gap-3 md:gap-5">
           <div className="w-full md-w-1/2">
             <p className="font-black text-5xl">03</p>
-            <h2 className="font-bold text-lg text-mainOrange uppercase">
+            <h2 className="font-bold text-lg text-amber-500 uppercase">
               LEAN GINEERS WEB SITE
             </h2>
             <p>
-              LeanGineer´s company website showcasing the company's portfolio
-              and service offerings, featuring a blog page and a contact form.
+              LeanGineer´s company website showcasing the company&apos;s
+              portfolio and service offerings, featuring a blog page and a
+              contact form.
             </p>
-            <h3 className="text-mainOrange">Stack:</h3>
-            <p className="text-cyan-500 font-semibold">
+            <h3 className="text-amber-500">Stack:</h3>
+            <p className="text-black font-semibold">
               Html, Css, Js, React, React-Bootstrap, Sytled Components, Redux,
               Node Js, Express, Mongoose, Mongo DB
             </p>
@@ -112,7 +117,7 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-mainOrange border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
               </button>
             </div>
@@ -129,10 +134,10 @@ const Projects = () => {
               Front-end application for managing pending tasks, the form
               includes the necessary validations to create an event. In addition
               to creating events, they can be updated and deleted. Furthermore,
-              each event is saved in the user's browser.
+              each event is saved in the user&apos;s browser.
             </p>
-            <h3 className="text-mainOrange">Stack:</h3>
-            <p className="text-cyan-500 font-semibold">
+            <h3 className="text-amber-500">Stack:</h3>
+            <p className="text-black font-semibold">
               Html, Css, Js, Stylyled Components, React, Hooks, Context Api,
               Node Js, Express, Mongoose, Mongo DB
             </p>
@@ -150,14 +155,14 @@ const Projects = () => {
                   />
                 </svg>
               </button>
-              <button className="text-mainOrange border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
+              <button className="text-amber-500 border border-mainOrange px-2 rounded hover:bg-mainOrange hover:text-black">
                 Live Demo
               </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Projects;

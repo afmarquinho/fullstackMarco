@@ -4,36 +4,40 @@ const About = () => {
   const [skills, setSkills] = useState(2);
 
   return (
-    <section className="w-full pb-10 md:pt-10 bg-slate-100">
-      <div className="w-11/12 max-w-[1100px] mx-auto">
+    <section className="w-full pt-2 pb-4 md:pt-20 relative" id="about">
+      <h1 className="font-archivo-black font-black uppercase text-xl md:text-4xl text-center bg-indigo-950 sticky top-0">
+        About Me
+      </h1>
+      <div className="w-11/12 max-w-[1200px] mx-auto">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 pt-10 md:pt-0 md:h-96 flex justify-center items-center relative">
+            {/* <!-- capa de la foto --> */}
+            <div className="absolute w-48 md:w-72 h-48 md:h-72 transform rotate-6 bg-amber-500 z-30"></div>
 
-        <h1 className="font-archivo-black uppercase text-2xl text-center bg-amber-500">
-          About Me
-        </h1>
-
-        <div>
-          <div className="flex justify-end">
-            <p className="bg-mainOrange text-black p-4 rounded me-0">
-              I&apos;m a passionate and creative full stack developer with a
-              love for technologies. Known for my problem-solving skills and
-              ability to work under pressure, I lead projects with discipline
-              and a commitment to continuous learning. My diverse skill set
-              allows me to deliver innovative solutions efficiently and
-              effectively.
-            </p>
+            {/* <!-- foto --> */}
+            <div className="bg-[url('./assets/foto.jpg')] w-48 md:w-72 h-48 md:h-72 bg-cover bg-center bg-no-repeat relative z-40 shadow-lg"></div>
+          </div>
+          {/* <!-- Fin foto --> */}
+          <div className="p-10 w-full md:w-1/2 flex justify-center items-center text-xl">
+            I&apos;m a passionate and creative full stack developer with a love
+            for technologies. Known for my problem-solving skills and ability to
+            work under pressure, I lead projects with discipline and a
+            commitment to continuous learning. My diverse skill set allows me to
+            deliver innovative solutions efficiently and effectively.
           </div>
         </div>
+
         <div>
-          <h2 className="uppercase text-md sm:text-lg font-bold text-white py-5">
+          <h2 className="uppercase text-xl sm:text-2xl text-center text-amber-500 font-black font-archivo-black pb-1">
             Skills
           </h2>
           <div>
             <div className="flex gap-3 mb-5">
               <button
-                className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
+                className={`px-2 py-1 w-24 text-black rounded-md ${
                   skills === 1
-                    ? "from-mainBlue to-cyan-700 text-white"
-                    : "from-mainOrange to-mainOrange"
+                    ? "bg-amber-500 text-indigo-950 font-medium"
+                    : "bg-slate-500 text-white"
                 }`}
                 onClick={() => setSkills(1)}
               >
@@ -42,8 +46,8 @@ const About = () => {
               <button
                 className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
                   skills === 2
-                    ? "from-mainBlue to-cyan-700 text-white"
-                    : "from-mainOrange to-mainOrange"
+                    ? "bg-amber-500 text-indigo-950 font-medium"
+                    : "bg-slate-500 text-white"
                 }`}
                 onClick={() => setSkills(2)}
               >
@@ -52,8 +56,8 @@ const About = () => {
               <button
                 className={`px-2 py-1 w-24 bg-gradient-to-b text-black rounded-md ${
                   skills === 3
-                    ? "from-mainBlue to-cyan-700 text-white"
-                    : "from-mainOrange to-mainOrange"
+                    ? "bg-amber-500 text-indigo-950 font-medium"
+                    : "bg-slate-500 text-white"
                 }`}
                 onClick={() => setSkills(3)}
               >
@@ -62,7 +66,7 @@ const About = () => {
             </div>
             {skills === 1 ? (
               <>
-                <h3 className="text-center uppercase text-black font-semibold bg-cyan-200 p-4 mb-2">
+                <h3 className="text-center uppercase text-white bg-amber-500 p-4 mb-2 text-xl md:text-2xl font-black font-archivo-black">
                   Frontend
                 </h3>
                 <ul className="list-disc ps-5">
@@ -77,7 +81,7 @@ const About = () => {
               </>
             ) : skills === 2 ? (
               <>
-                <h3 className="text-center uppercase text-black font-semibold bg-cyan-200 p-4 mb-2">
+                <h3 className="text-center uppercase text-white bg-amber-500 p-4 mb-2 text-xl md:text-2xl font-black font-archivo-black">
                   Backend
                 </h3>
                 <ul className="list-disc ps-5">
@@ -88,7 +92,7 @@ const About = () => {
               </>
             ) : (
               <>
-                <h3 className="text-center uppercase text-black font-semibold bg-cyan-200 p-4 mb-2">
+              <h3 className="text-center uppercase text-white bg-amber-500 p-4 mb-2 text-xl md:text-2xl font-black font-archivo-black">
                   Other Skills
                 </h3>
                 <ul className="list-disc ps-5">

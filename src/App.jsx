@@ -75,8 +75,8 @@ const App = () => {
       <main className="w-full text-white">
         <Hero />
         <Services />
-        <About />
         <Projects />
+        <About />
         <Contact />
       </main>
     </>

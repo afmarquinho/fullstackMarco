@@ -3,7 +3,7 @@ const Navbar = () => {
   return (
     <div className="hidden md:block border-b-8 border-b-amber-400 fixed w-full z-50 bg-white text-black">
       <div
-        className="w-11/12 max-w-[1200px] mx-auto py-5 text-blue 
+        className="w-11/12 max-w-[1200px] mx-auto py-3 text-blue 
       text-amber-500 flex justify-between"
       >
         <div className="flex gap-3">
