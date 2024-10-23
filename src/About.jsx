@@ -70,13 +70,14 @@ const About = () => {
                   Frontend
                 </h3>
                 <ul className="list-disc ps-5">
-                  <li>HTML, CSS, JavaScript, Typescript</li>
+                  <li>HTML, CSS, JavaScript/Typescript</li>
+                  <li>Next Js</li>
                   <li>React Js, Vue Js.</li>
+                  <li>Redux, Context API, Zustand</li>
                   <li>
                     Styled Components, Bootstrap, Tailwind Css, Saas, Element
                     Plus, Material UI
                   </li>
-                  <li>Redux, Context API, Hooks</li>
                 </ul>
               </>
             ) : skills === 2 ? (
@@ -85,9 +86,11 @@ const About = () => {
                   Backend
                 </h3>
                 <ul className="list-disc ps-5">
+                  <li>SQL</li>
                   <li>Node, Express</li>
+                  <li>Prisma</li>
                   <li>Mongoose, MongoDB</li>
-                  <li>Sequelize,PostgreSQL</li>
+                  <li>Sequelize, PostgreSQL</li>
                 </ul>
               </>
             ) : (
