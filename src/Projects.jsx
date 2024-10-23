@@ -29,10 +29,8 @@ const Projects = () => {
             </p>
             <h3 className="text-amber-500">Stack:</h3>
             <p className="text-black font-semibold">
-              Typescript, React, React-dom, Redux, Redux (thunk - toolkit), Zod,
-              Axios, Tailwind Css, Node Js, Express, Postgresql, Sequelize,
-              Jest, Swagger, Morgan, Multer, Express-validator, Jsonwebtoken,
-              Bcryptjs
+              Typescript, React, Redux, Zod, Node Js, Express, Postgresql, Sequelize,
+              Jest, Swagger, Multer, Jsonwebtoken, Bcryptjs.
             </p>
             <div className="flex gap-3 my-2">
               <button>
@@ -66,14 +64,11 @@ const Projects = () => {
               Kassya Management
             </h2>
             <p>
-              Fullstack (MERN) project in development, it is an ERP for supply
-              chain processes management. It consists of 3 modules, purchasing,
-              suppliers and inventory.
+             It is an ERP for supply and purchases management systems, it comes with a metrics panel to oversee processes.
             </p>
             <h3 className="text-amber-500">Stack:</h3>
             <p className="text-black font-semibold">
-              Html, Css, Js, Tailwind Css, React, Redux, Node Js, Express,
-              Mongoose, Mongo DB
+             React, Next Js, Node, Express, Prisma, Tailwind, Jest, Zustand, PostgreSql.
             </p>
             <div className="flex gap-3 my-2">
               <button>

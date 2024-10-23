@@ -19,7 +19,7 @@ const Services = () => {
               backend performance.
             </p>
             <p className="text-amber-500 md:text-indigo-950">
-              Technologies: HTML, CSS, Js, Ts, React, Node.js, PostgreSQL, Mongo DB.
+              Technologies: React, NextJs, Prisma, Node.js, PostgreSQL, Mongo DB.
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Services = () => {
               Designing secure, efficient APIs to enhance app functionality.
             </p>
             <p className="text-indigo-950 md:text-amber-500">
-              Technologies: REST, Node.js, Express, Sequelize.
+              Technologies: REST, Node.js, Express, Sequelize. <span className={`font-bold`}>SQL</span>
             </p>
           </div>
         </div>
