@@ -2,19 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .contenedor ::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  animation: rotate 10s linear infinite; 
+  animation: rotate 10s linear infinite;
   z-index: -1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  border:2px;
+  border: 2px;
   border-color: #105369;
 }
 
@@ -25,20 +23,33 @@
   100% {
     transform: translate(-50%, -50%) rotate(360deg) scale(1);
   }
-}  
+}
 
-.jana-image{
-  background-image: url(./assets/jana.png);
+.bg-jana {
+  background-image: url(./assets/janalogo.png);
 }
-.kassya-image{
-  background-image: url(./assets/kassya.png);
+.bg-kassya {
+  background-image: url(./assets/kassyalogo.png);
 }
-.tasky-image{
-  background-image: url(./assets/tasky.png);
+.bg-tasky {
+  background-image: url(./assets/taskylogo.png);
 }
-.leangineers-image{
-  background-image: url(./assets/leangineers.png);
+.bg-leangineers {
+  background-image: url(./assets/leangineerslogo.png);
 }
 .bg-about {
   background-image: url(./assets/IMG_1290.JPG);
 }
+
+.card{
+ @apply text-center rounded-lg h-60 relative bg-blue-500 p-5 flex flex-col justify-end items-end overflow-hidden
+}
+
+.card-faded {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+

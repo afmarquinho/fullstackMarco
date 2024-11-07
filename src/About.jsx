@@ -5,7 +5,7 @@ const About = () => {
 
   return (
     <section className="w-full pt-2 pb-4 md:pt-20 relative" id="about">
-      <h1 className="font-archivo-black font-black uppercase text-xl md:text-4xl text-center bg-indigo-950 sticky top-0">
+      <h1 className="font-archivo-black font-black uppercase text-xl md:text-4xl text-center bg-indigo-950 sticky md:static top-0 z-50">
         About Me
       </h1>
       <div className="w-11/12 max-w-[1200px] mx-auto">

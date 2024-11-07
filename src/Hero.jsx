@@ -11,9 +11,12 @@
 const Hero = () => {
   return (
     <>
-      <div className="bg-[url('./assets/fondo.jpg')] bg-fixed bg-top bg-no-repeat bg-cover pt-1 md:pt-20  h-screen relative" id="home">
-        {/* Capa degradda */}
-        <div className="h-screen absolute bg-custom-gradient top-0 bottom-0 right-0 left-0"></div>
+      <div
+        className="bg-[url('./assets/fondo.jpg')] bg-fixed bg-top bg-no-repeat bg-cover pt-1 md:pt-20  h-screen relative"
+        id="home"
+      >
+        {/* Capa degradad */}
+        <div className="h-screen absolute bg-custom-gradient top-0 bottom-0 right-0 left-0"/>
 
         {/* Contenido del Hero */}
         <div className="relative w-full h-full max-w-[1200px] flex flex-col md:flex-row mx-auto">
@@ -22,7 +25,7 @@ const Hero = () => {
 
           {/* Texto del Hero */}
           <div className="w-11/12 md:w-2/3 flex justify-center items-center mx-auto">
-            <div className="w-full max-w-[35rem] space-y-0 md:space-y-10">
+            <div className="w-full max-w-[35rem] space-y-0 md:space-y-10 md:px-5">
               <p className="text-2xl md:text-5xl font-archivo-black">
                 <span className=" md:text-amber-500">I&apos;m</span> full Stack
                 Developer <br />{" "}
