@@ -42,7 +42,7 @@
 }
 
 .card{
- @apply text-center rounded-lg h-60 relative bg-blue-500 p-5 flex flex-col justify-end items-end overflow-hidden
+ @apply text-center h-60 relative bg-blue-500 p-5 flex flex-col justify-end items-end overflow-hidden
 }
 
 .card-faded {

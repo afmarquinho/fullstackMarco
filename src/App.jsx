@@ -4,7 +4,7 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Services from "./Services";
-import Project from "./Project";
+// import Project from "./Project";
 
 const App = () => {
   return (
@@ -76,8 +76,8 @@ const App = () => {
       <main className="w-full text-white">
         <Hero />
         <Services />
-        <Project />
-        {/* <Projects /> */}
+        {/* <Project /> */}
+        <Projects /> 
         <About />
         <Contact />
       </main>

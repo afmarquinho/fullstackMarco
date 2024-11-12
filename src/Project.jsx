@@ -40,12 +40,13 @@ const Project = () => {
       <div className={`grid grid-cols-3 grid-rows-4 md:grid-rows-2 gap-5`}>
         {/* Card # 1 */}
         <div
-          className={`card col-span-3 md:col-span-2`}
+          className={`card col-span-3 md:col-span-2 cursor-pointer`}
           onMouseEnter={() => onShow("card1")}
           onMouseLeave={() => onShow("card1")}
         >
           <div
-            className={`absolute inset-0 z-[5] bg-kassya bg-no-repeat bg-cover bg-center`}
+            className={`absolute  z-[5] bg-kassya bg-no-repeat bg-cover bg-center transition-all duration-700
+              ${show1 ? "inset-[-10px]" : "inset-0"}`}
           />
           <div
             className={`card-faded absolute z-10 inset-0 transform transition-transform duration-150 ${
@@ -53,14 +54,14 @@ const Project = () => {
             }`}
           />
           <div
-            className={`bg-amber-500 absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
+            className={`bg-indigo-950  bg-opacity-80 absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
               show1 ? "top-0" : "top-[100%]"
             }`}
           />
           <h2
             className={`absolute left-0 right-0 font-archivo-black text-base lg:text-lg w-full z-20 text-center transition-all duration-500 ease-in-out ${
               show1
-                ? "translate-y-full bottom-52 md:bottom-56"
+                ? "translate-y-full bottom-48 text-amber-500"
                 : "translate-y-0 bottom-5"
             }`}
           >
@@ -68,15 +69,15 @@ const Project = () => {
           </h2>
           <div
             className={`${
-              show1 ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+              show1 ? "translate-y-0" : "translate-y-full opacity-0"
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
-            <p>
+            <p className={``}>
               Check out all of these gorgeous mountain trips with beautiful
               views of, you guessed it, the mountains
             </p>
             <button
-              className={`bg-slate-900 py-2 px-3 text-sm hover:bg-slate-800 transition-colors duration-200`}
+              className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
             >
               + More Info
             </button>
@@ -85,12 +86,13 @@ const Project = () => {
 
         {/* Card # 2 */}
         <div
-          className={`card col-span-3 md:col-span-1`}
+          className={`card col-span-3 md:col-span-1 cursor-pointer`}
           onMouseEnter={() => onShow("card2")}
           onMouseLeave={() => onShow("card2")}
         >
           <div
-            className={`absolute inset-0 z-[5] flex justify-center items-center bg-jana bg-no-repeat bg-cover bg-left`}
+            className={`absolute  z-[5] bg-jana bg-no-repeat bg-cover bg-left transition-all duration-700
+              ${show2 ? "inset-[-10px]" : "inset-0"}`}
           />
           <div
             className={`card-faded absolute z-10 inset-0 transform transition-transform duration-150 ${
@@ -98,30 +100,30 @@ const Project = () => {
             }`}
           />
           <div
-            className={`bg-white absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
+            className={`bg-indigo-950  bg-opacity-80 absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
               show2 ? "top-0" : "top-[100%]"
             }`}
           />
           <h2
             className={`absolute left-0 right-0 font-archivo-black text-base lg:text-lg w-full z-20 text-center transition-all duration-500 ease-in-out ${
               show2
-                ? "translate-y-full bottom-52 md:bottom-56 text-indigo-950"
-                : "translate-y-0 bottom-5 text-white"
+                ? "translate-y-full bottom-48 text-amber-500"
+                : "translate-y-0 bottom-5"
             }`}
           >
-            Jana Management
+            Kassya Management - ERP
           </h2>
           <div
             className={`${
-              show2 ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+              show2 ? "translate-y-0" : "translate-y-full opacity-0"
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
-            <p className={`text-indigo-950`}>
+            <p className={``}>
               Check out all of these gorgeous mountain trips with beautiful
               views of, you guessed it, the mountains
             </p>
             <button
-              className={`bg-slate-900 py-2 px-3 text-sm hover:bg-slate-800 transition-colors duration-200`}
+              className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
             >
               + More Info
             </button>
@@ -130,12 +132,13 @@ const Project = () => {
 
         {/* Card # 3 */}
         <div
-          className={`card col-span-3 md:col-span-1`}
+          className={`card col-span-3 md:col-span-1 cursor-pointer`}
           onMouseEnter={() => onShow("card3")}
           onMouseLeave={() => onShow("card3")}
         >
           <div
-            className={`absolute inset-0 z-[5] bg-tasky bg-no-repeat bg-cover bg-left`}
+            className={`absolute  z-[5] bg-tasky bg-no-repeat bg-cover bg-left transition-all duration-700
+              ${show3 ? "inset-[-10px]" : "inset-0"}`}
           />
           <div
             className={`card-faded absolute z-10 inset-0 transform transition-transform duration-150 ${
@@ -143,30 +146,30 @@ const Project = () => {
             }`}
           />
           <div
-            className={`bg-amber-500 absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
+            className={`bg-indigo-950  bg-opacity-80 absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
               show3 ? "top-0" : "top-[100%]"
             }`}
           />
           <h2
             className={`absolute left-0 right-0 font-archivo-black text-base lg:text-lg w-full z-20 text-center transition-all duration-500 ease-in-out ${
               show3
-                ? "translate-y-full bottom-52 md:bottom-56"
+                ? "translate-y-full bottom-48 text-amber-500"
                 : "translate-y-0 bottom-5"
             }`}
           >
-            Tasky
+            Kassya Management - ERP
           </h2>
           <div
             className={`${
-              show3 ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+              show3 ? "translate-y-0" : "translate-y-full opacity-0"
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
-            <p>
+            <p className={``}>
               Check out all of these gorgeous mountain trips with beautiful
               views of, you guessed it, the mountains
             </p>
             <button
-              className={`bg-slate-900 py-2 px-3 text-sm hover:bg-slate-800 transition-colors duration-200`}
+              className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
             >
               + More Info
             </button>
@@ -175,12 +178,13 @@ const Project = () => {
 
         {/* Card # 4 */}
         <div
-          className={`card col-span-3 md:col-span-2`}
+          className={`card col-span-3 md:col-span-2 cursor-pointer`}
           onMouseEnter={() => onShow("card4")}
           onMouseLeave={() => onShow("card4")}
         >
           <div
-            className={`absolute inset-0 z-[5] bg-leangineers bg-no-repeat bg-cover bg-left`}
+            className={`absolute  z-[5] bg-leangineers bg-no-repeat bg-cover bg-center transition-all duration-700
+              ${show4 ? "inset-[-10px]" : "inset-0"}`}
           />
           <div
             className={`card-faded absolute z-10 inset-0 transform transition-transform duration-150 ${
@@ -188,30 +192,30 @@ const Project = () => {
             }`}
           />
           <div
-            className={`bg-white absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
+            className={`bg-indigo-950  bg-opacity-80 absolute left-0 right-0 bottom-0 z-10 transition-all duration-500 ease-in-out ${
               show4 ? "top-0" : "top-[100%]"
             }`}
           />
           <h2
             className={`absolute left-0 right-0 font-archivo-black text-base lg:text-lg w-full z-20 text-center transition-all duration-500 ease-in-out ${
               show4
-                ? "translate-y-full bottom-52 md:bottom-56 text-indigo-950"
-                : "translate-y-0 bottom-5 text-white"
+                ? "translate-y-full bottom-48 text-amber-500"
+                : "translate-y-0 bottom-5"
             }`}
           >
-            Leangineers Website
+            Kassya Management - ERP
           </h2>
           <div
             className={`${
-              show4 ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+              show4 ? "translate-y-0" : "translate-y-full opacity-0"
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
-            <p className={`text-indigo-950`}>
+            <p className={``}>
               Check out all of these gorgeous mountain trips with beautiful
               views of, you guessed it, the mountains
             </p>
             <button
-              className={`bg-slate-900 py-2 px-3 text-sm hover:bg-slate-800 transition-colors duration-200`}
+              className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
             >
               + More Info
             </button>

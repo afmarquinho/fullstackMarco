@@ -51,11 +51,11 @@ const Projects = () => {
               </button> */}
             </div>
           </div>
-          <div className="jana-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
+          <div className="bg-jana w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"/>
         </div>
         <hr className="my-6 border-1 border-mainOrange" />
         <div className="kassya flex flex-col-reverse sm:flex-row gap-4 sm:gap-3 md:gap-5">
-          <div className="kassya-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
+          <div className="bg-kassya w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"/>
           <div className="w-full md-w-1/2">
             <p className="font-black font-archivo-black text-xl md:text-5xl text-amber-500 ">
               02
@@ -128,11 +128,11 @@ const Projects = () => {
               </button> */}
             </div>
           </div>
-          <div className="leangineers-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
+          <div className="bg-leangineers w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"/>
         </div>
         <hr className="my-6 border-1 border-mainOrange" />
         <div className="tasky flex flex-col-reverse sm:flex-row gap-4 sm:gap-3 md:gap-5">
-          <div className="tasky-image w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"></div>
+          <div className="bg-tasky w-2/3 h-48 md:w-1/2 sm:h-auto bg-center rounded-xl bg-cover"/>
           <div className="w-full md-w-1/2">
             <p className="font-black font-archivo-black text-xl md:text-5xl text-amber-500 ">
               04
