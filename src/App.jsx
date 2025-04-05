@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
+import Project from "./Project";
 import Services from "./Services";
 // import Project from "./Project";
 
@@ -76,8 +77,8 @@ const App = () => {
       <main className="w-full text-white">
         <Hero />
         <Services />
-        {/* <Project /> */}
-        <Projects /> 
+        <Project /> 
+
         <About />
         <Contact />
       </main>

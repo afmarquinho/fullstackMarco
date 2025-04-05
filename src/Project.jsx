@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ProjectModal } from "./ProjectModal";
 
 const Project = () => {
   const [show1, setShow1] = useState(false);
@@ -6,18 +7,34 @@ const Project = () => {
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);
 
+  const [showModal, setshowModal] = useState(false);
+  const [project, setProject] = useState("kassya");
+
   const onShow = (card) => {
     switch (card) {
       case "card1":
         setShow1(!show1);
+        setShow2(false);
+        setShow3(false);
+        setShow4(false);
+
         break;
       case "card2":
+        setShow1(false);
         setShow2(!show2);
+        setShow3(false);
+        setShow4(false);
         break;
       case "card3":
+        setShow1(false);
+        setShow2(false);
         setShow3(!show3);
+        setShow4(false);
         break;
       case "card4":
+        setShow1(false);
+        setShow2(false);
+        setShow3(false);
         setShow4(!show4);
         break;
       default:
@@ -25,16 +42,22 @@ const Project = () => {
     }
   };
 
+  const openModal = (p) => {
+    setshowModal(true)
+    setProject(p)
+  };
+  
+
   return (
     <section
-      className="relative pt-2 pb-4 md:pt-20 w-11/12 max-w-[900px] mx-auto"
+      className="relative pt-2 pb-4 md:pt-20 w-11/12 max-w-[1200px] mx-auto"
       id="projects"
     >
       <h1
         className="uppercase text-2xl md:text-4xl font-black font-archivo-black sticky md:static top-0 text-center text-amber-500 z-30 bg-indigo-950 pb-10"
         id="projects"
       >
-        Projects
+        Outstanding Projects
       </h1>
       {/* cards */}
       <div className={`grid grid-cols-3 grid-rows-4 md:grid-rows-2 gap-5`}>
@@ -45,7 +68,7 @@ const Project = () => {
           onMouseLeave={() => onShow("card1")}
         >
           <div
-            className={`absolute  z-[5] bg-kassya bg-no-repeat bg-cover bg-center transition-all duration-700
+            className={`absolute  z-[5] bg-kassya bg-no-repeat bg-cover bg-top transition-all duration-700
               ${show1 ? "inset-[-10px]" : "inset-0"}`}
           />
           <div
@@ -73,11 +96,13 @@ const Project = () => {
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
             <p className={``}>
-              Check out all of these gorgeous mountain trips with beautiful
-              views of, you guessed it, the mountains
+              Kassya is a modular ERP that manages purchasing and inventory with
+              automated business logic. It consolidates data into a statistical
+              dashboard for real-time analysis.
             </p>
             <button
               className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
+              onClick={()=>openModal("kassya")}
             >
               + More Info
             </button>
@@ -107,11 +132,11 @@ const Project = () => {
           <h2
             className={`absolute left-0 right-0 font-archivo-black text-base lg:text-lg w-full z-20 text-center transition-all duration-500 ease-in-out ${
               show2
-                ? "translate-y-full bottom-48 text-amber-500"
+                ? "translate-y-full bottom-[13rem] text-amber-500"
                 : "translate-y-0 bottom-5"
             }`}
           >
-            Kassya Management - ERP
+            JANA - ERP
           </h2>
           <div
             className={`${
@@ -119,11 +144,12 @@ const Project = () => {
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
             <p className={``}>
-              Check out all of these gorgeous mountain trips with beautiful
-              views of, you guessed it, the mountains
+              Jana manages bidding processes in metalworking companies, applying
+              mathematical analysis for financial tracking and decision-making.
             </p>
             <button
               className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
+              onClick={()=>openModal("jana")}
             >
               + More Info
             </button>
@@ -153,11 +179,11 @@ const Project = () => {
           <h2
             className={`absolute left-0 right-0 font-archivo-black text-base lg:text-lg w-full z-20 text-center transition-all duration-500 ease-in-out ${
               show3
-                ? "translate-y-full bottom-48 text-amber-500"
+                ? "translate-y-full bottom-[13rem] text-amber-500"
                 : "translate-y-0 bottom-5"
             }`}
           >
-            Kassya Management - ERP
+            Tasky
           </h2>
           <div
             className={`${
@@ -165,11 +191,13 @@ const Project = () => {
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
             <p className={``}>
-              Check out all of these gorgeous mountain trips with beautiful
-              views of, you guessed it, the mountains
+              Tasky is a task and simple project management tool with persistent
+              data storage, designed to organize tasks and workflows
+              efficiently.
             </p>
             <button
               className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
+              onClick={()=>openModal("tasky")}
             >
               + More Info
             </button>
@@ -183,7 +211,7 @@ const Project = () => {
           onMouseLeave={() => onShow("card4")}
         >
           <div
-            className={`absolute  z-[5] bg-leangineers bg-no-repeat bg-cover bg-center transition-all duration-700
+            className={`absolute  z-[5] bg-leangineers bg-no-repeat bg-cover bg-top transition-all duration-700
               ${show4 ? "inset-[-10px]" : "inset-0"}`}
           />
           <div
@@ -203,7 +231,7 @@ const Project = () => {
                 : "translate-y-0 bottom-5"
             }`}
           >
-            Kassya Management - ERP
+            Leangineers
           </h2>
           <div
             className={`${
@@ -211,17 +239,21 @@ const Project = () => {
             } my-2 space-y-2 w-full transform transition-all duration-500 ease-in-out relative z-20`}
           >
             <p className={``}>
-              Check out all of these gorgeous mountain trips with beautiful
-              views of, you guessed it, the mountains
+              Leangineer is a startup with a promotional website offering
+              reengineering consulting services to companies. It focuses on
+              optimizing processes and enhancing operational efficiency for its
+              clients.
             </p>
             <button
               className={`bg-amber-500 hover:bg-amber-400 text-indigo-950 font-medium p-2 transition-colors duration-200`}
+              onClick={()=>openModal("leangineer")}
             >
               + More Info
             </button>
           </div>
         </div>
       </div>
+      {showModal && <ProjectModal project={project} setClose={setshowModal} />}
     </section>
   );
 };

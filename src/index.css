@@ -29,7 +29,7 @@
   background-image: url(./assets/janalogo.png);
 }
 .bg-kassya {
-  background-image: url(./assets/kassyalogo.png);
+  background-image: url(./assets/dashboard.png);
 }
 .bg-tasky {
   background-image: url(./assets/taskylogo.png);
@@ -41,8 +41,8 @@
   background-image: url(./assets/IMG_1290.JPG);
 }
 
-.card{
- @apply text-center h-60 relative bg-blue-500 p-5 flex flex-col justify-end items-end overflow-hidden
+.card {
+  @apply text-center h-60 relative bg-blue-500 p-5 flex flex-col justify-end items-end overflow-hidden;
 }
 
 .card-faded {
@@ -53,3 +53,42 @@
   );
 }
 
+.swiper-slide-active {
+  width: 500px;
+}
+.swiper-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(72, 5, 255, 0.37);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+.swiper-slide-active::after {
+  background: rgba(0, 0, 0, 0.041);
+}
+
+.swiper-slide-active img{
+  transform: scale(1.1);
+}
+.swiper-pagination-bullet{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(255, 176, 5, 0.658);
+  transition: all 0.6s ease-in-out;
+}
+.swiper-pagination-bullet-active{
+  width: 32px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.658);
+}
+
+@media (max-width: 900px) {
+
+  .swiper-slide-active {
+    width: 400px
+  }
+}
