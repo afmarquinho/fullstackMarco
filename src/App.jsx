@@ -2,7 +2,6 @@ import About from "./About";
 import Hero from "./Hero";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
-import Projects from "./Projects";
 import Project from "./Project";
 import Services from "./Services";
 // import Project from "./Project";
@@ -74,7 +73,7 @@ const App = () => {
         </a>
       </div> 
       {/* Fin Social Network */}
-      <main className="w-full text-white">
+      <main className="w-full text-white text-sm lg:text-base">
         <Hero />
         <Services />
         <Project /> 

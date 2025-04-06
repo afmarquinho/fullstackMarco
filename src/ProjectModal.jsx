@@ -42,7 +42,7 @@ export const ProjectModal = ({ project, setClose }) => {
 
   return (
     <div
-      className={`fixed inset-0 bg-amber-800 z-[100] bg-opacity-90 flex justify-center items-center`}
+      className={`fixed inset-0 bg-white z-[100] bg-opacity-90 flex justify-center items-center`}
     >
       <div
         className={`bg-indigo-950 w-11/12 max-w-[1100px] p-5 m-auto relative rounded`}
@@ -62,7 +62,7 @@ export const ProjectModal = ({ project, setClose }) => {
           {content[project].stack.split(",").map((element, i) => (
             <span
               key={i}
-              className={`bg-blue-400 mx-1 bg-opacity-25 px- rounded-full font-medium`}
+              className={`bg-blue-400 mx-1 bg-opacity-25 px-1 rounded-full md:font-medium`}
             >
               {element}
             </span>
